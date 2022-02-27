@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-color: #CF88AA;
+    --second-color: #987EC5;
+    --third-color: #8880D3;
+    --frame-color: #F3F0F0;
+    --block-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    display: grid;
+    grid-column: 1;
+    
+}
+
+
+.principal{
+    display: flex;
+    background-color: var(--frame-color);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.block-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 406px;
+    height: 556px;
+    left: 266px;
+    background: #FFFFFF;
+    box-shadow: -10px 10px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.block-1 h1{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: var(--third-color);
+    margin-top: 56px;
+    margin-bottom: 16px;
+}
+
+.block-1 .options-login {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 28px;
+}
+
+.block-1 .options-login .item-login {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #C7C7C7;
+    border-radius: 100%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+
+.block-1 p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.block-1 .fields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 36px;
+    margin-bottom: 16px;
+}
+
+.block-1 .fields input {
+    background: #F0F0F0;
+    width: 246px;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+}
+
+.block-1 .fields input::placeholder{
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+    text-indent: 20px ;
+}
+
+.block-1 .button-sign-in {
+    width: 196px;
+    height: 50px;
+    background: linear-gradient(90deg, #987EC5 5.1%, #CF88AA 94.39%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 16px;
+
+}
+
+.block-1 .link {
+    cursor: pointer;
+}
+
+.block-2 {
+    position: absolute;
+    width: 473px;
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 629px;
+    background: linear-gradient(180deg, #CF88AA 0%, rgba(242, 230, 236, 0.68) 100%);
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.15);
+    mix-blend-mode: darken;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.block-2 .image {
+    position: absolute;
+    z-index: 0;
+    mix-blend-mode: multiply;
+
+}
+
+.block-2 .image img {
+    width: 586px;
+    height: 534px;
+    opacity: 0.5;
+
+}
+
+.block-2 .content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 52px;
+    z-index: 1;
+}
+
+.block-2 .content .text  {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-2 .content .text .title{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 55px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.88);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.block-2 .content .text .subtitle {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.65);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.block-2 .content .button-sign-up button {  
+    padding: 0;
+    width: 239px;
+    height: 61px;
+    left: 169px;
+    top: 348px;    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: none;
+    background: rgba(54, 51, 51, 0.75);
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 32px;
+    cursor: pointer;
+}
