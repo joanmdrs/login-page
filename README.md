@@ -9,7 +9,13 @@ Treinar minhas habilidades de desenvolvimento Front-End.
 
 <h3>Resultado </h3>
 
-<img src="./img/result-application" /> 
+<img src="./img/result-application.jpeg" /> 
+
+#
+
+Você pode visualizar melhor o resultado realizando o dowloand do projeto e executando na sua máquina. 
+Após baixar o projeto, basta ir até a pasta que você realizou o download e abrir o arquivo .html 
+no navegador de sua preferência.
 
 
 
