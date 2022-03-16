@@ -11,6 +11,18 @@
 <body>
     
     <main>
+
+       <div id="confirm" class="confirm">
+            <div class="message">
+                <p>
+                Login realizado com sucesso !
+                </p>
+            </div>
+    
+            <div id="load" class="load">
+    
+            </div>
+       </div>
         <div class="principal">
             <div class="block-1">
                 <h1>
@@ -23,13 +35,13 @@
                 </div>
                 <p>or use your email accout</p>
                 <div class="fields">
-                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="email" name="email" placeholder="Email" autocomplete="off" required>
                     <input type="password" name="password" placeholder="Passoword" required>
                 </div>
                 <p class="link">
                     forgout your password ?
                 </p>
-                <button class="button-sign-in link">SIGN IN</button>
+                <button id="button-sign-in" class="button-sign-in link">SIGN IN</button>
     
             </div>
             <div class="block-2">
@@ -45,7 +57,7 @@
                     </div>
     
                     <div class="button-sign-up link">
-                        <button>SIGN UP</button>
+                        <button type="submit">SIGN UP</button>
                     </div>
                 </div>
     
@@ -64,6 +76,8 @@
             <a href="https://www.flaticon.com/" target="_blank" title="Flaticon">www.flaticon.com</a>
         </div>
     </footer>
+
+    <script src="./script.js"></script>
 
 </body>
 </html>

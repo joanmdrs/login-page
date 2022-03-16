@@ -17,6 +17,75 @@ body {
     background-color: var(--frame-color);
 }
 
+.confirm {
+    display: flex;
+    flex-direction: column;
+    display: none;
+
+}
+
+.message {
+    width: 200px;
+    height: 100px;
+    z-index: 3;
+    right: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: login-realizado;
+    animation-duration: 2s;
+    color: black;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.load {
+    background: linear-gradient(90deg, #987EC5 5.1%, #CF88AA 94.39%);
+    height: 7px;
+    position: absolute;
+    z-index: 3;
+    right: 10px;
+    top: 125px;
+    border-radius: 30px;
+    animation: load;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+@keyframes login-realizado {
+    from {
+        transform: translateY(-500px)
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes login-timeout {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(-500px);
+    }
+}
+
+@keyframes load {
+
+    from {
+        width: 200px;
+    }
+    to {
+        width: 0px;
+    }
+}
+
+
 
 .principal{
     display: flex;
@@ -38,7 +107,7 @@ body {
     background: #FFFFFF;
     box-shadow: -10px 10px 4px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .block-1 h1{
@@ -140,7 +209,7 @@ body {
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.15);
     mix-blend-mode: darken;
     border-radius: 15px;
-    z-index: 0;
+    z-index: 1;
 }
 
 .block-2 .image {
@@ -238,6 +307,11 @@ footer .icons a {
     body {
         display: grid;
         align-items: center;
+    }
+
+    .confirm {
+        position: relative;
+        right: 0;
     }
     .principal {
         flex-direction: column;
