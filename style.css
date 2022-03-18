@@ -16,44 +16,53 @@ body {
     font-family: 'Nunito', sans-serif;
     background-color: var(--frame-color);
 }
-
 .confirm {
-    display: flex;
-    flex-direction: column;
     display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 110px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    margin: 0;
 
 }
 
 .message {
-    width: 200px;
     height: 100px;
-    z-index: 3;
-    right: 10px;
-    position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     animation: login-realizado;
     animation-duration: 2s;
-    color: black;
+    animation-fill-mode: forwards;
     border-radius: 5px;
+    color: #000;
     font-weight: 500;
     font-size: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.message p {
+    margin-top: 25px;
+}
+
 .load {
     background: linear-gradient(90deg, #987EC5 5.1%, #CF88AA 94.39%);
+    width: 200px;
     height: 7px;
-    position: absolute;
-    z-index: 3;
-    right: 10px;
-    top: 125px;
-    border-radius: 30px;
     animation: load;
-    animation-duration: 5s;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    animation-duration: 3s;
     animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
 
 @keyframes login-realizado {
@@ -62,12 +71,13 @@ body {
     }
 
     to {
-        transform: translateY(10px);
+        transform: translateY(0px);
     }
 }
 
 @keyframes login-timeout {
     from {
+    
         transform: translateY(10px);
     }
     to {
@@ -293,6 +303,8 @@ footer .icons {
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
     gap: 5px;
     
 }
@@ -302,21 +314,27 @@ footer .icons a {
     color: var(--second-color);
 }
 
-@media(max-width: 992px){
+@media(max-width: 1000px){
 
     body {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
     .confirm {
-        position: relative;
         right: 0;
     }
+
     .principal {
         flex-direction: column;
         height: auto;
     }
+
     .block-1 {
         position: relative;
         left: auto;
